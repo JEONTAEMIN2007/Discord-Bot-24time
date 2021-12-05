@@ -1,6 +1,6 @@
 import discord
 import asyncio
-
+import os
 
 client = discord.Client()
 
@@ -215,5 +215,6 @@ async def on_member_join(member):
             role = i
             break
     await client.add_roles(member, role)
-
-client.run("OTE1OTIwNTk0NzMyNzI4MzYw.Yainhg.pApa4bdJrdfmkxR73r3ltXmvb94")
+    
+access_token = od.environ["BOT_TOKEN"]
+client.run("access_token")
